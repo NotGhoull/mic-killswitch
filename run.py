@@ -12,7 +12,7 @@ with open("version.txt", "r") as f:
     r = requests.get("https://raw.githubusercontent.com/NotGhoull/mic-killswitch/master/version.txt?token=GHSAT0AAAAAABRTHNTDZ37W7SJPFDESEMPUYSVTIOQ")
     if r.text != version:print("[WARNING] The version of this program is outdated. Please update to the latest version.")
     else: print("Code is up to date!")
-    version.close()
+    f.close()
 
 
 print(f"App is listening for kill word: {ks.killWord}")
