@@ -9,7 +9,7 @@ with open("version.txt", "r") as f:
     print(f"Version: {version}")
     # Check if the version text matches the github raw version.txt
     import requests
-    r = requests.get("https://raw.githubusercontent.com/NotGhoull/mic-killswitch/master/version.txt?token=GHSAT0AAAAAABRTHNTDZ37W7SJPFDESEMPUYSVTIOQ")
+    r = requests.get("https://raw.githubusercontent.com/NotGhoull/mic-killswitch/master/version.txt")
     if r.text != version:print("[WARNING] The version of this program is outdated. Please update to the latest version.")
     else: print("Code is up to date!")
     f.close()
